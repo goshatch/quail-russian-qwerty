@@ -12,6 +12,24 @@ As a Russian kid growing up in Europe, I never learned to type on the â€œnormalâ
 
 Install the package or evaluate `quail-russian-qwerty.el`, and the `russian-qwerty` input method will be available to select via `M-x set-input-method`.
 
+### Doom Emacs
+
+In your `packages.el`:
+
+```elisp
+(package!
+  quail-russian-qwerty
+  :recipe (:host github
+           :repo "goshatch/quail-russian-qwerty"
+           :files ("*.el")))
+```
+
+In your `config.el`:
+
+```elisp
+(use-package! quail-russian-qwerty)
+```
+
 ## Contributing
 
 If you notice any problems, please open an issue on the issue tracker. Alternatively, please feel free to [email me](mailto:mail@gosha.net) or find me [on Twitter](https://twitter.com/goshatch).
