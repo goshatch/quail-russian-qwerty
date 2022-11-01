@@ -18,6 +18,10 @@
 ;; You should have received a copy of the GNU General Public License along with
 ;; this program. If not, see <https://www.gnu.org/licenses/>.
 
+;;; Code:
+
+(require 'quail)
+
 (quail-define-package
  "russian-qwerty" "Russian" "RU" nil
  "ЯШЕРТЫ Russian QWERTY-based phonetic layout"
@@ -124,3 +128,6 @@
  ("<" ?<)
  (">" ?>)
  ("?" ??))
+
+(provide 'quail-russian-qwerty)
+;;; quail-russian-qwerty.el ends here
